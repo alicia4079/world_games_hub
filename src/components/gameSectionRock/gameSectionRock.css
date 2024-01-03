@@ -1,0 +1,51 @@
+.rock-paper-scissors h2 {
+  text-align: center;
+  font-size: 60px;
+  padding: var(--gh-padding-s);
+  color: var(--gh-color-2);
+}
+
+.divCounter {
+  padding: var(--gh-padding-m);
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  align-items: center;
+}
+
+.divPlayer,
+.divComputer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gh-gap-s);
+}
+
+.divPlayer h3,
+.divComputer h3 {
+  color: whitesmoke;
+}
+.divPlayer p,
+.divComputer p {
+  font-size: 120px;
+  color: var(--gh-color-3);
+}
+
+.divImg {
+  padding: var(--gh-padding-m);
+  display: flex;
+  justify-content: center;
+  gap: var(--gh-gap-xl);
+  align-items: center;
+}
+
+.imgSrc {
+  max-width: 170px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .gameSectionRock h2 {
+    font-size: 30px;
+  }
+}

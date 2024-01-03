@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+:root {
+  /* COLORS */
+  --gh-color-1: hsl(107, 98%, 64%);
+  --gh-color-2: #fffb13;
+  --gh-color-3: #cbf707dc;
+  --gh-color-4: rgb(255, 53, 53);
+  --gh-color-5: rgb(8, 5, 5);
+  --gh-color-6: rgba(208, 2, 81, 0.867);
+
+  --gh-bgColor: var(--gh-color-1);
+  --gh-special-color: var(--gh-color-2);
+  --gh-textColor: var(--gh-color-3);
+  --gh-textColor2: var(--gh-color-4);
+  --gh-textColor3: var(--gh-color-5);
+  --gh-textColor4: var(--gh-color-6);
+
+  /* FONTS */
+  --gh-primary-font: 'Rubik Doodle Shadow', sans-serif;
+
+  /* SPACINGS */
+  --gh-margin-xs: 5px;
+  --gh-margin-s: 10px;
+  --gh-margin-m: 20px;
+  --gh-margin-l: 30px;
+  --gh-margin-xl: 50px;
+
+  --gh-padding-xs: 5px;
+  --gh-padding-s: 10px;
+  --gh-padding-m: 20px;
+  --gh-padding-l: 30px;
+  --gh-padding-xl: 50px;
+
+  --gh-gap-xs: 5px;
+  --gh-gap-s: 10px;
+  --gh-gap-m: 20px;
+  --gh-gap-l: 30px;
+  --gh-gap-xl: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: var(--gh-primary-font);
+  background-color: #005c63;
+  background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png');
+}

@@ -1,0 +1,74 @@
+.hangman h2 {
+  text-align: center;
+  font-size: 60px;
+  padding: var(--gh-padding-s);
+  color: var(--gh-color-2);
+}
+.hangman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hangman-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  gap: 100px;
+}
+
+.hangman-image {
+  width: 300px;
+}
+
+.divLetters {
+  padding-right: var(--gh-padding-m);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-transform: capitalize;
+  font-size: 35px;
+  gap: 15px;
+}
+.divLetters p {
+  cursor: pointer;
+}
+
+.hangman h3 {
+  margin-top: var(--gh-margin-xl);
+  color: var(--gh-textColor);
+  font-size: 40px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 1100px) {
+  .hangman-image {
+    max-width: 250px;
+  }
+  .divLetters {
+    font-size: 30px;
+    padding: var(--gh-padding-l);
+  }
+  .hangman h3 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .hangman h2 {
+    font-size: 45px;
+  }
+  .hangman-image {
+    max-width: 200px;
+  }
+  .hangman h3 {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  .divLetters {
+    font-size: 28px;
+    padding: var(--gh-padding-m);
+  }
+}

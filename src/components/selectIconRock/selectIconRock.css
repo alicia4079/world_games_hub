@@ -1,0 +1,85 @@
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.iconContainer img {
+  cursor: pointer;
+}
+
+.iconContainer h3 {
+  text-align: center;
+  padding-bottom: var(--gh-padding-m);
+  color: var(--gh-textColor);
+  font-size: 26px;
+}
+.iconCenter {
+  display: flex;
+  justify-content: center;
+  gap: var(--gh-gap-xl);
+}
+
+.selectedIcon {
+  display: flex;
+}
+
+.resultIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--gh-margin-m) 0 var(--gh-margin-m);
+}
+
+.randomIcon,
+.selectIcon {
+  max-width: 150px;
+}
+
+.resultMessageContainer h3 {
+  color: var(--gh-textColor2);
+  font-size: 40px;
+}
+
+#victoryCounter,
+#defeatCounter {
+  color: whitesmoke;
+  font-size: 18px;
+  margin: 10px;
+  padding: 5px;
+  border: 3px solid var(--gh-textColor2);
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+#resetScoresButton {
+  margin-left: var(--gh-margin-m);
+  padding: var(--gh-padding-xs);
+  color: var(--gh-textColor);
+  font-weight: 900;
+  background-color: black;
+  cursor: pointer;
+}
+
+#resetScoresButton:hover {
+  scale: 1.1;
+}
+
+@media (max-width: 1100px) {
+  #victoryCounter,
+  #defeatCounter,
+  #resetScoresButton {
+    margin-bottom: var(--gh-margin-m);
+  }
+  .iconCenter {
+    padding-bottom: var(--gh-padding-m);
+  }
+}
+
+@media (max-width: 500px) {
+  .randomIcon,
+  .selectIcon {
+    width: 90px;
+  }
+}
