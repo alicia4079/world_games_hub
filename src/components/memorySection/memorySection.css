@@ -47,4 +47,12 @@ p {
   .memory h2 {
     font-size: 35px;
   }
+  .divAnimals {
+    width: 350px;
+    gap: 5px;
+  }
+  .imgAnimal {
+    width: 80px;
+    height: 80px;
+  }
 }
