@@ -1,4 +1,5 @@
 import { enlaces } from '../../data/enlaces'
+import { createFooter } from '../footer/footer'
 import './header.css'
 
 const loadPage = (pageFunction) => {
@@ -54,4 +55,6 @@ export const header = () => {
   headerHTML.appendChild(nav)
   nav.appendChild(ul)
   document.body.appendChild(headerHTML)
+  const footer = createFooter()
+  headerHTML.appendChild(footer)
 }

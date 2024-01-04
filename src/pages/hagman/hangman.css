@@ -1,0 +1,11 @@
+.hangman footer {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+@media (max-width: 500px) {
+  .hangman footer {
+    left: 15%;
+  }
+}

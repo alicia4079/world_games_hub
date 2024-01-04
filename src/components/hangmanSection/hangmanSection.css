@@ -34,6 +34,9 @@
 .divLetters p {
   cursor: pointer;
 }
+.divLetters p.selected {
+  color: black;
+}
 
 .hangman h3 {
   margin-top: var(--gh-margin-xl);
@@ -50,6 +53,9 @@
     font-size: 30px;
     padding: var(--gh-padding-l);
   }
+  .hangman-container {
+    gap: 0;
+  }
   .hangman h3 {
     font-size: 30px;
     margin-top: 0;
@@ -61,7 +67,10 @@
     font-size: 45px;
   }
   .hangman-image {
-    max-width: 200px;
+    max-width: 150px;
+  }
+  .hangman-container {
+    gap: 0;
   }
   .hangman h3 {
     margin-top: 0;

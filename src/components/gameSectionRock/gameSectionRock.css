@@ -50,6 +50,7 @@
 @media (max-width: 1100px) {
   .rock-paper-scissors h2 {
     font-size: 35px;
+    padding: var(--gh-padding-xl) var(--gh-padding-s) 0 var(--gh-padding-s);
   }
   .divPlayer p,
   .divComputer p {

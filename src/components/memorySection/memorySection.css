@@ -14,10 +14,10 @@
 
 .divAnimals {
   display: grid;
-  width: 450px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  width: 550px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 8px;
 }
 
 .imgAnimal {
@@ -46,8 +46,11 @@ p {
 @media (max-width: 500px) {
   .memory h2 {
     font-size: 35px;
+    padding: var(--gh-padding-xl) var(--gh-padding-s) 0 var(--gh-padding-s);
   }
   .divAnimals {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     width: 350px;
     gap: 5px;
   }

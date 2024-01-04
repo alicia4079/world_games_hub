@@ -7,3 +7,14 @@
   background-color: var(--gh-color-2);
   cursor: pointer;
 }
+.rock-paper-scissors footer {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+@media (max-width: 500px) {
+  .rock-paper-scissors footer {
+    left: 15%;
+  }
+}

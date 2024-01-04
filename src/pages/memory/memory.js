@@ -1,3 +1,4 @@
+import { createFooter } from '../../components/footer/footer'
 import { printSection } from '../../components/memorySection/memorySection'
 import './memory.css'
 
@@ -19,4 +20,6 @@ export const memory = () => {
 
   printSection(memorySection)
   memorySection.appendChild(closeButton)
+  const footer = createFooter()
+  memorySection.appendChild(footer)
 }

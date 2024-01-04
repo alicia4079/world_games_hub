@@ -1,3 +1,4 @@
+import { createFooter } from '../../components/footer/footer'
 import { printSection } from '../../components/hangmanSection/hangmanSection'
 import './hangman.css'
 
@@ -19,4 +20,6 @@ export const hangman = () => {
 
   printSection(hangmanSection)
   hangmanSection.appendChild(closeButton)
+  const footer = createFooter()
+  hangmanSection.appendChild(footer)
 }

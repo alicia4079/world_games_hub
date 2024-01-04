@@ -55,6 +55,9 @@ header nav li:nth-child(3) {
   top: 200px;
   right: 100px;
 }
+header footer {
+  left: 40%;
+}
 
 @media (max-width: 1100px) {
   header h1 {
@@ -78,6 +81,9 @@ header nav li:nth-child(3) {
   }
   header img {
     width: 300px;
+  }
+  header footer {
+    display: none;
   }
 }
 

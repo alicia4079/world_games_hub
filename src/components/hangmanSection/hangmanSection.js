@@ -74,7 +74,7 @@ export const printSection = (hangmanSection) => {
     const pLetters = document.createElement('p')
     pLetters.textContent = letter
 
-    pLetters.addEventListener('click', () => handleLetterClick(letter))
+    pLetters.addEventListener('click', handleLetterClick)
 
     divLetters.appendChild(pLetters)
   }
@@ -112,12 +112,21 @@ export const printSection = (hangmanSection) => {
     }
   }
 
-  function handleLetterClick(letter) {
+  function handleLetterClick(event) {
+    const element = event.target
+    const letter = element.textContent
+
+    if (element.classList.contains('selected')) {
+      return
+    }
+
     if (secretWord.includes(letter)) {
       updateRevealedWord(letter)
     } else {
       handleIncorrectAttempt()
     }
+
+    element.classList.add('selected')
   }
 
   function updateRevealedWord(letter) {

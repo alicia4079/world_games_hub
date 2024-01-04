@@ -1,3 +1,4 @@
+import { createFooter } from '../../components/footer/footer'
 import {
   arrayIconsRock,
   printSection
@@ -24,4 +25,6 @@ export const rock = () => {
   const iconContainer = selectIconRock(arrayIconsRock)
   gameSectionRock.appendChild(iconContainer)
   gameSectionRock.appendChild(closeButton)
+  const footer = createFooter()
+  gameSectionRock.appendChild(footer)
 }

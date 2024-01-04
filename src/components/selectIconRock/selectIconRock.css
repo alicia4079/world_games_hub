@@ -85,4 +85,8 @@
   .resultMessageContainer h3 {
     font-size: 20px;
   }
+  #victoryCounter,
+  #defeatCounter {
+    font-size: 14px;
+  }
 }
